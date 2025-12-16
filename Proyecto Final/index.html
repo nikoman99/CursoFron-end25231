@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+
+    <!-- ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- TU CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <img src="/Proyecto Final/Imagenes/wuma.png" alt="tienda online" width="400" height="250">
+
+        <h1> Tienda "Online"</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- SECCIÓN PRODUCTOS -->
+    <main>
+        <!-- CARRITO DE COMPRAS -->
+        <header>
+            <section id="carrito">
+                <h2>Carrito de compras</h2>
+
+                <ul id="lista-carrito">
+                    <!-- Productos agregados -->
+                </ul>
+
+                <p id="total">Total: $0</p>
+
+                <button id="vaciar-carrito">Vaciar carrito</button>
+            </section>
+        </header>
+
+        <section id="productos">
+            <h2>Productos</h2>
+
+            <div class="productos--contenedor">
+
+                <!-- PRODUCTO 1 -->
+                <article class="producto">
+                    <img src="/Proyecto Final/nuevos ingresos.png" alt="producto" width="240" height="200">
+
+                    <div class="producto--contenido">
+                        <h3>Producto Decoración</h3>
+                        <p class="producto--detalle--texto">
+                            Regalo para navidad 1
+                        </p>
+                        <p class="producto--detalle--prcecio">$10.00</p>
+                        <button class="agregar-carrito" data-nombre="Producto Decoración 1" data-precio="10">
+                            Agregar al carrito
+                        </button>
+
+
+                    </div>
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="producto">
+                    <img src="/Proyecto Final/nuevos ingresos.png" alt="producto" width="240" height="200">
+
+                    <div class="producto--contenido">
+                        <h3>Producto Decoración</h3>
+                        <p class="producto--detalle--texto">
+                            Regalo para Navidad 2
+                        </p>
+                        <p class="producto--detalle--prcecio">$15.00</p>
+                        <button class="agregar-carrito" data-nombre="Producto Decoración 2" data-precio="15">
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article class="producto">
+                    <img src="/Proyecto Final/nuevos ingresos.png" alt="producto" width="240" height="200">
+
+                    <div class="producto--contenido">
+                        <h3>Producto Decoración</h3>
+                        <p class="producto--detalle--texto">
+                            Regalo para Navidad 3
+                        </p>
+                        <p class="producto--detalle--prcecio">$25.00</p>
+                        <button class="agregar-carrito" data-nombre="Producto Decoración 3" data-precio="25">
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+                </article>
+
+
+            </div>
+            <!--CARRITO DE COMPRA -->
+
+
+
+        </section>
+
+
+        <!--RECEÑAS-->
+        <header>
+            <h2>Reseñas</h2>
+            <section id="resenias">
+                <div class="resenias--contenedor">
+                    <article class="card">
+                        <img src="./hassan-khan-EGVccebWodM-unsplash.jpg" alt="" width="100" height="100">
+                        <div class="card--contenido">
+                            <h3>Maria</h3>
+
+
+                            <p>Exelentes productos para regalos </p>
+
+                    </article>
+                </div>
+            </section>
+        </header>
+
+        <!-- VIDEO -->
+        <header>
+            <section>
+                <h2>Nuevos ingresos</h2>
+                <video controls width="400" muted>
+                    <source src="/Proyecto Final/Diseño sin título.mp4" type="video/mp4">
+                </video>
+            </section>
+        </header>
+
+
+        <!-- MAPA -->
+        <header>
+            <section>
+                <h2>Donde estamos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26178.48350757163!2d-58.56850625!3d-34.8986582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1758500473684!5m2!1ses-419!2sar"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </section>
+        </header>
+
+
+        <!-- FORMULARIO -->
+        <header>
+            <section>
+                <h2>Formulario de Clientes</h2>
+
+                <form action="https://formspree.io/f/xqayzvpa" method="post">
+
+                    <fieldset>
+                        <legend>Información Personal</legend>
+
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div>
+                            <label for="mail">Correo electrónico:</label>
+                            <input type="email" id="mail" name="mail" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mensaje</legend>
+
+                        <label for="mensaje">Deja tu mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+
+                    <h2>Mensajes Recibidos</h2>
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Mensaje</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </form>
+            </section>
+        </header>
+
+
+
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <form action="https://formspree.io/f/xqayzvpa" method="post" class="contacto--form">
+
+            <div>
+                <label for="nombre-contacto">Nombre</label>
+                <input type="text" id="nombre-contacto" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="email-contacto">Email</label>
+                <input type="email" id="email-contacto" name="email" required>
+            </div>
+
+            <div>
+                <label for="mensaje-contacto">Mensaje</label>
+                <textarea id="mensaje-contacto" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        </div>
+        </section><!-- SECCIÓN CONTACTOS -->
+        <section id="contactos">
+
+            <header>
+            <h2>Contacto</h2>
+
+            <div class="contacto--contenedor">
+
+                <!-- DATOS DE CONTACTO -->
+            
+                  <div class="contacto--info">
+                    <p><i class="fa fa-map-marker"></i> Buenos Aires, Argentina</p>
+                    <p><i class="fa fa-phone"></i> +54 9 11 1234 5678</p>
+                    <p><i class="fa fa-envelope"></i> contacto@wuma.com</p>
+                 </div>
+            </header>
+
+             
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>@ Mi sitio Web 2025, todos los derechos reservados</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
